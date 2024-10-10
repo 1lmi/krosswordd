@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "krossword", "krossword\krossword.csproj", "{05EEF290-8D93-4112-8810-43FB15139BDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05EEF290-8D93-4112-8810-43FB15139BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EEF290-8D93-4112-8810-43FB15139BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EEF290-8D93-4112-8810-43FB15139BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EEF290-8D93-4112-8810-43FB15139BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BDF8FE1-C3ED-4715-9C01-FE928DF2C7D4}
+	EndGlobalSection
+EndGlobal
