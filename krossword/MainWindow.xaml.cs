@@ -96,7 +96,6 @@ namespace krossword
                     }
                     else
                     {
-                        // Проверяем, что не выходим за границы
                         if (randomColumn + charsInWord < 30)
                         {
                             TextBox tb = GetTextBox(randomRow, randomColumn + j);
@@ -110,25 +109,21 @@ namespace krossword
                     }
                 }
 
-                // Обновляем границы для следующего слова
                 if (vertikal_mode)
                 {
-                    // Для вертикального слова мы обновляем границы для пересечения
-                    min_row = randomRow + charsInWord - random.Next(1,charsInWord-1); // Обновляем строку по окончанию слова
-                    max_row = min_row; // Ограничиваем следующую строку пересечением
-                    min_col = randomColumn; // Колонка остаётся фиксированной
-                    max_col = randomColumn; // Колонка не изменяется
+                    min_row = randomRow + charsInWord - random.Next(1,charsInWord-1);
+                    max_row = min_row;
+                    min_col = randomColumn; 
+                    max_col = randomColumn;
                 }
                 else
                 {
-                    // Для горизонтального слова аналогично обновляем границы для пересечения
-                    min_col = randomColumn + charsInWord - random.Next(1, charsInWord-1); // Обновляем колонку по окончанию слова
-                    max_col = min_col; // Ограничиваем следующую колонку пересечением
-                    min_row = randomRow; // Строка остаётся фиксированной
-                    max_row = randomRow; // Строка не изменяется
+                    min_col = randomColumn + charsInWord - random.Next(1, charsInWord-1);
+                    max_col = min_col;
+                    min_row = randomRow;
+                    max_row = randomRow;
                 }
 
-                // Переключаем направление для следующего слова
                 vertikal_mode = !vertikal_mode;
             }
         }
